@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-primario: #4b0000;
+  --color-secundary: #e0e0e0;
+}
+
+.login-container {
+  background-color: #410000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
+}
+
+.login-box {
+  background-color: var(--color-secundary);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 400px;
+  color: #212121;
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.login-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.errmsg {
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  border: none;
+  background: var(--color-secundary);
+  border-bottom: 2px solid var(--color-primario);
+  font-size: 1rem;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.form-control:focus {
+  outline: none;
+  border-bottom-color: var(--color-primario);
+}
+
+.form-control:not(:placeholder-shown) + label {
+  font-size: 0.8rem;
+  top: 0;
+  color: var(--color-primario);
+}
+
+.btn-login {
+  background-color: var(--color-primario);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: var(--color-primario);
+}
